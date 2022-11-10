@@ -33,6 +33,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Anek Latin', sans-serif;
+    background-color: 
 }
 html {
     scroll-behavior: smooth;
@@ -45,6 +46,7 @@ body {
     color: var(--L-black);
     fill: var(--L-black);
     transition: 0.3s;
+    
 
 }
 
@@ -54,10 +56,10 @@ body.dark {
     --L-clothes-Background: #131218;
     --L-menu: #1B1A23;
     --L-black: #fff;
-    transition: 0.4s;
+    transition: 0.8s all ease-in-out;
+
 
 }
-
 
 
 .navBarContainer {
@@ -108,7 +110,7 @@ a{
 .logo {
     width: 30px;
     height: 30px;
-    border-radius: 100%;
+    
    
 }
 
@@ -301,8 +303,8 @@ button:nth-child(2) {
     height: 60px;
     width: 120px;
     border: none;
-    background-color: black;
-    color: white;
+    background-color: rgb(204, 201, 201);
+    color:var(--L-black);
     transition: 0.3s;
     cursor: pointer;
 
@@ -487,6 +489,7 @@ button:nth-child(2):hover {
     transition: transform .3s;
     border: 2px var(--L-primary) solid;
     color: var(--L-primary);
+    
 }
 
 .button:hover {
@@ -495,6 +498,7 @@ button:nth-child(2):hover {
     box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
     color: var(--L-background);
     cursor: pointer;
+    
 }
 
 .cartClothesContainer {
@@ -554,12 +558,12 @@ button:nth-child(2):hover {
     border-radius: 5px;
 }
 
-.imgCartBuy {
+.imgCartShop {
     width: 100px;
     height: 100px;
 }
 
-.imgCartBuy>img {
+.imgCartShop>img {
     width: 100%;
     height: 100%;
     border-radius: 10px;   
@@ -575,7 +579,7 @@ button:nth-child(2):hover {
     padding: 20px;
 }
 
-.buysContent {
+.shopContent {
     width: 100%;
     height: 100px;
     margin: 10px;
@@ -591,7 +595,7 @@ button:nth-child(2):hover {
     border: 3px solid white;
 }
 
-.buttonsCart {
+.btnCart {
     display: flex;
     justify-content: center;
     gap: 1em
@@ -621,7 +625,7 @@ button:nth-child(2):hover {
     font-weight: 600;
 }
 
-.principalProductInfo {
+.ProductInfo {
     display: flex;
     flex-direction: column;
     gap: 0.2em;
@@ -704,11 +708,7 @@ button:nth-child(2):hover {
   
  
 
-  /* hooola */
-
-  
-
-@media (max-width: 800px) {
+  @media (max-width: 800px) {
      
 
     *{
@@ -835,3 +835,6 @@ button:nth-child(2):hover {
 }
 }
  
+
+  
+
