@@ -313,7 +313,7 @@ button:nth-child(2):hover {
   
 }
 
-.boxItem {
+.box__Item {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -329,17 +329,17 @@ button:nth-child(2):hover {
   
 }
 
-.boxItem:hover {
+.box__Item:hover {
   cursor: pointer;
   box-shadow: inset rgb(121 121 121 / 40%) 2px -12px 12px -5px;
 }
 
-.boxItem > .name {
+.box__Item > .name {
   font-size: 20px;
   font-weight: 600;
 }
 
-.boxItem > .description {
+.box__Item > .description {
   font-size: 15px;
   font-weight: 200;
 }
@@ -784,9 +784,7 @@ a {
   .containerSecondMenu {
     width: 400px;
   }
-  /* .secondMenu {
-    width: 10px;
-  } */
+  
 
   .containerMain {
     display: flex;

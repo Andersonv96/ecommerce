@@ -56,8 +56,7 @@ const totalP = document.querySelector('.alignContainer')
 let cartCar = `<div class="imageCart">
      <img src="https://academlo-store.netlify.app/assets/img/empty-cart.png">
  </div> 
- <h2>Your cart is empty</h2>
- <p>You can add items to your cart by clicking on the "" button on the product page.</p>
+ <h2>You card is empaty</h2>
  `
 purchaseCart.innerHTML = cartCar
 
@@ -106,6 +105,7 @@ document.addEventListener('click', function (event) {
             <div class="quantify">${product.amount} units</div>
             <div data-id="${product.id}" class="operator add">+</div>
             <i data-id="${product.id}" class=" trash fi fi-rr-trash"></i>
+            <i class="bx bx-trash-alt cart__amount-trash" data-id="2"></i>
             </div>
             </div>
             </div>`
@@ -190,7 +190,7 @@ document.addEventListener('click', function (event) {
         let total = 0;
         buyProducts.forEach((valueTotal) => total += (valueTotal.price * valueTotal.amount))
         
-        let dataTotalAmount = `<div id="totalPay" class="total">Total    $${total}</div>
+        let dataTotalAmount = `<div id="totalPay" class="total">$Total  ${total}</div>
         <button><i class='bx bxs-check-shield'></i>Checkout</button>`
         
         totalP.innerHTML = dataTotalAmount
@@ -236,35 +236,35 @@ document.addEventListener('click', function (event) {
 
 
 
-const sun = document.querySelector('.sol');
-const moon = document.querySelector('.luna');
+const sol = document.querySelector('.sol');
+const luna = document.querySelector('.luna');
 const body = document.querySelector('body')
 
-let dark = moon.addEventListener('click', function switchDarkMode() {
-    moon.classList.toggle("hidden");
-    if (moon.classList.contains("hidden")) {
-        sun.classList.remove("hidden");
+let dark = luna.addEventListener('click', function switchDarkMode() {
+    luna.classList.toggle("hidden");
+    if (luna.classList.contains("hidden")) {
+        sol.classList.remove("hidden");
         body.classList.add("dark")
     }
 });
 
-let light =sun.addEventListener('click', function switchLightMode() {
-    sun.classList.toggle("hidden");
-    if (sun.classList.contains("hidden")) {
-        moon.classList.remove("hidden");
+let light =sol.addEventListener('click', function switchLightMode() {
+    sol.classList.toggle("hidden");
+    if (sol.classList.contains("hidden")) {
+        luna.classList.remove("hidden");
         body.classList.remove("dark");
     }
 });
 
 
-const CardsContainer = document.querySelector('.cartClothesContainer')
+const clothesCardsContainer = document.querySelector('.cartClothesContainer')
 const shopping = document.querySelector('.svgContainer')
 const closeTag = document.querySelector('.closeTag')
 
 shopping.addEventListener('click', function () {
-    CardsContainer.classList.add('show_cartClothesContainer')
+    clothesCardsContainer.classList.add('show_cartClothesContainer')
 });
 
 closeTag.addEventListener('click', function () {
-    CardsContainer.classList.remove('show_cartClothesContainer')
+    clothesCardsContainer.classList.remove('show_cartClothesContainer')
 })
