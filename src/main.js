@@ -36,7 +36,7 @@ items.forEach(product => {
                     <div class="card">
                     <img src="${product.img}" alt="" srcset="">
                     </div>
-                <   div class="cardFooter">
+                    <div class="cardFooter">
                     <div class="priceContainer">
                         <div class="price">$${product.price}.00</div>
                         <div class="priceSeparator"></div>
@@ -59,6 +59,8 @@ let cartCar = `<div class="imageCart">
  <h2>You card is empaty</h2>
  `
 purchaseCart.innerHTML = cartCar
+
+
 
 let buyProducts = []
 
@@ -187,8 +189,8 @@ document.addEventListener('click', function (event) {
         let total = 0;
         buyProducts.forEach((valueTotal) => total += (valueTotal.price * valueTotal.amount))
         
-        let dataTotalAmount = `<div id="totalPay" class="total">$${total}</div>
-        <button>Checkout</button>`
+        let dataTotalAmount = `<div id="totalPay" class="total">$Total  ${total}</div>
+        <button><i class='bx bxs-check-shield'></i>Checkout</button>`
         
         totalP.innerHTML = dataTotalAmount
         console.log(dataTotalAmount)
