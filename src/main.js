@@ -232,26 +232,22 @@ document.addEventListener('click', function (event) {
     totalValue();
 });
 
-
-
-
-
-const sol = document.querySelector('.sol');
-const luna = document.querySelector('.luna');
+const sun = document.querySelector('.sol');
+const moon = document.querySelector('.luna');
 const body = document.querySelector('body')
 
-let dark = luna.addEventListener('click', function switchDarkMode() {
-    luna.classList.toggle("hidden");
-    if (luna.classList.contains("hidden")) {
-        sol.classList.remove("hidden");
+let dark = moon.addEventListener('click', function switchDarkMode() {
+    moon.classList.toggle("hidden");
+    if (moon.classList.contains("hidden")) {
+        sun.classList.remove("hidden");
         body.classList.add("dark")
     }
 });
 
-let light =sol.addEventListener('click', function switchLightMode() {
-    sol.classList.toggle("hidden");
-    if (sol.classList.contains("hidden")) {
-        luna.classList.remove("hidden");
+let light =sun.addEventListener('click', function switchLightMode() {
+    sun.classList.toggle("hidden");
+    if (sun.classList.contains("hidden")) {
+        moon.classList.remove("hidden");
         body.classList.remove("dark");
     }
 });
@@ -268,3 +264,4 @@ shopping.addEventListener('click', function () {
 closeTag.addEventListener('click', function () {
     clothesCardsContainer.classList.remove('show_cartClothesContainer')
 })
+
